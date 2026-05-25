@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel de Aparelhos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="painel-container">
+    <div class="header-painel">
+      <h2>Gerenciamento de Aparelhos</h2>
+      <button id="btnSair" class="btn-perigo">Sair</button>
+    </div>
+
+    <div class="form-box">
+      <h3>Cadastrar Novo Aparelho</h3>
+      <form id="formAparelho">
+        <input type="hidden" id="aparelhoId"> <div class="input-row">
+          <input type="text" id="nomeAparelho" placeholder="Nome do Aparelho" required>
+          <input type="text" id="setorAparelho" placeholder="Setor (ex: UTI, Recepção)" required>
+          <select id="statusAparelho">
+            <option value="Ativo">Ativo</option>
+            <option value="Manutenção">Manutenção</option>
+            <option value="Inativo">Inativo</option>
+          </select>
+          <button type="submit" id="btnSalvar">Salvar</button>
+        </div>
+      </form>
+    </div>
+
+    <table class="tabela-aparelhos">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Setor</th>
+          <th>Status</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="listaAparelhos">
+        </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
