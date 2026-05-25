@@ -1,0 +1,26 @@
+# Dependencias
+node_modules/
+
+# Variaveis de ambiente (NUNCA suba isso!)
+.env
+.env.local
+.env.production
+
+# Banco de dados
+*.db
+*.sqlite
+*.sqlite3
+aparelhos
+
+# Logs
+npm-debug.log*
+logs/
+*.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
